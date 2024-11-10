@@ -26,15 +26,15 @@ body{
 }
 .container .header{
     background: #c8ae9c;
-    width: 1000px;
+    width: 800px;
     height: 80px;
     position: fixed;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     margin: 0px 315px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .container .nav-bar .nav-btn{
     background: none;
@@ -66,7 +66,7 @@ body{
 .container .nav-bar .nav-link{
     top: 23px;
     position: fixed;
-    right: 550px;
+    right: 480px;
 }
 .container .nav-bar .nav-link a{
     text-decoration: none;
@@ -83,26 +83,26 @@ body{
     width: 50px;
 }
 .main .start .image{
-    width: 40%;
+    width: 50%;
     position: relative;
-    right: 42%;
+    right: 35%;
     top: 180px;
 }
 .main .start h1{
     font-family: 'plasma';
     position: absolute;
     font-size: 6em;
-    right: 30%;
+    right: 21%;
     top: 35%;
 }
 .main .start p{
     font-family: 'MahboubehMehravar', sans-serif;
     position: relative;
-    right: 30%;
+    right: 21%;
     font-size: 1.1em;
     bottom: 10px;
     color: #807267;
-    top: 28px;
+    top: -40px;
 }
 .main .description{
     width: 800px;
@@ -148,7 +148,7 @@ body{
     font-family: plasma, sans-serif;
     font-size: 1.7em;
     position: relative;
-    right: 450px;
+    right: 250px;
     margin-bottom: 25px;
   }
   

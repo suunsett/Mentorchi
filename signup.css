@@ -1,0 +1,105 @@
+@font-face {
+    font-family: mahbu;
+    src: url(/Mentorchii/Mahboubeh_mehravar.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    direction: rtl;
+}
+
+body {
+    font-family: mahbu ,sans-serif;
+    display: flex;
+    background-color: #fff5e5;
+} 
+input::placeholder {
+    text-align: right;
+    font-size: 0.8em;
+    padding: 10px;
+    font-family: mahbu ,sans-serif;
+}
+
+.signup-container {
+    width: 350px;
+    height: 480px;
+    background-color: #D4BDAC;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.signup-container .container{
+    margin-top: 20px;
+    position: relative;
+    right: 7px;
+}
+
+h2 {
+
+    font-size: 2em;
+    margin-top: 35px;
+}
+
+.input {
+    margin-right: 60px;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+.input-field {
+    width: 220px;
+    height: 28px;
+    border: 2px solid #5272CC;
+    opacity: 90%;
+    background: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.confirm-button {
+    font-family: mahbu,sans-serif;
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 55px;
+    margin-top: 18px;
+    background-color: #5272CC;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+    background-color: #4764b3;
+}
+
+.container .text{
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+.container .text a{
+    padding-right: 5px;
+    font-size: 1em;
+    color: #0a0090;
+    text-decoration: none;
+}   
+
+.image-container img{
+    width: 700px;
+    height: 400px;
+    position: relative;
+    left: 280px;
+    bottom: 250px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

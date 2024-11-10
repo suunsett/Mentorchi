@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MahboubehMehravar';
-    src: url(Mahboubeh_mehravar.ttf);
+    src: url(Mentorchii/Mahboubeh_mehravar.ttf);
 }
 @font-face {
     font-family: 'plasma';
@@ -32,13 +32,13 @@ body{
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    margin: 20px 315px;
+    margin: 0px 315px;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
 }
 .container .nav-bar .nav-btn{
     background: none;
-    margin-top: 8px;
+    margin-top: 20px;
     margin-right: 20px;
 }
 .container .nav-bar .nav-btn .btn-login{/*link or button?*/
@@ -50,6 +50,7 @@ body{
     font-size: 1.2em;
     border: none;
     margin: 0px 5px;
+    cursor: pointer;
 }
 .container .nav-bar .nav-btn .btn-signup{/*link or button?*/
     font-family: 'MahboubehMehravar', sans-serif;
@@ -59,9 +60,11 @@ body{
     padding: .6px;
     width: 70px;;
     border-radius: 10px;
+    cursor: pointer;
+    
 }
 .container .nav-bar .nav-link{
-    top: 27px;
+    top: 23px;
     position: fixed;
     right: 550px;
 }
@@ -74,11 +77,11 @@ body{
     margin: 1px;
 }
 .container .header .image{/*it should be link to home page*/
-    top: 27px;
+    top: 18px;
     position: fixed;
     left: 300px;
     width: 50px;
-} 
+}
 .main .start .image{
     width: 40%;
     position: relative;
@@ -102,11 +105,10 @@ body{
     top: 28px;
 }
 .main .description{
-    width: 750px;
-    height: 270px;
+    width: 800px;
+    height: 300px;
     background: #D4BDAC;
-    position: absolute;
-    right: 450px;
+    right: 440px;
     border-radius: 11px;
     position: relative;
     margin: 200px 0px;
@@ -135,100 +137,19 @@ body{
     color: black;
     font: 'MahboubehMehravar', sans-serif;
 }
-.main .blob{
-    position: absolute;
-    top: 400px;
-    right: -450px;
+.main .blob-container .blob{
+    width: 50%;
+    position: relative;
+    left: 400px;
     opacity: 80%;
 }
-.main .question{
-        position: absolute;
-        right: 30%;
-}
-.main .question h1{
-    font-family: 'plasma';
-    font-size: 2rem;
-}
-/* .main .question .questions{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    row-gap: 20px;
-    width: 650px;
-    height: 250px;
-}
-.main .question .questions .selector1{
-    background: #D4BDAC;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-family: 'MahboubehMehravar', sans-serif; 
-}
-.main .question .questions .selector2{
-    background: #D4BDAC;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-family: 'MahboubehMehravar', sans-serif; 
-}
-.main .question .questions .selector3{
-    background: #D4BDAC;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-family: 'MahboubehMehravar', sans-serif; 
-}
-.main .question .questions .selector4{
-    background: #D4BDAC;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-family: 'MahboubehMehravar', sans-serif; 
-} */
-/* .accordion {
-    width: 80%;
-    max-width: 600px;
-} */
-.accordion-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #c8ae9c; 
-    color: #4a362a;
-    padding: 15px 20px;
-    margin: 18px 0;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 650px;
-    height: 18px;
-    position: relative;
-}
-.accordion-item:hover {
-    background-color: #b29685;
-    transition: .7s; 
-}
 
-.bx {
-    font-size: 16px;
-    position: relative;
-    right: 630px;
-    font-size: 2em;
-    color: #807267;
-}
-
-.accordion-item .question {
-    font-size: 1.3em;
-    color: black;
-    position: absolute;
-    right: 30px;
-}
-/* h1{
+.question h1{
     font-family: plasma, sans-serif;
-    margin-bottom: 50px;
+    font-size: 1.7em;
+    position: relative;
+    right: 450px;
+    margin-bottom: 25px;
   }
   
   .faq-heading {
@@ -253,11 +174,12 @@ body{
   }
   
   .faq {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     border: none;
     border-radius: 14px;
     position: relative;
+    right: 110px;
   }
   
   .faq label {
@@ -324,7 +246,8 @@ body{
 .question {
     font-size: 18px;
     color: black;    
-} */
+}
+
 
 
 

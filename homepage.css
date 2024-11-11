@@ -16,8 +16,8 @@
 body{
     background: #FFF5E5;
     font-family: 'MahboubehMehravar', sans-serif;
+    overflow-x: hidden; 
     height: 250vh;
-    overflow-x: hidden;
 }
 .container{
     position: relative;
@@ -25,7 +25,7 @@ body{
     justify-content: center;
 }
 .container .header{
-    background: #c8ae9c;
+    background: #D4BDAC;
     width: 800px;
     height: 80px;
     position: fixed;
@@ -35,6 +35,7 @@ body{
     margin: 0px 315px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    z-index: 4;
 }
 .container .nav-bar .nav-btn{
     background: none;
@@ -82,18 +83,23 @@ body{
     left: 300px;
     width: 50px;
 }
-.main .start .image{
-    width: 50%;
+
+.main .start{
     position: relative;
-    right: 35%;
-    top: 180px;
+    top: 30px;
+} 
+.main .start .image{
+    width: 55%;
+    position: relative;
+    right: 30%;
+    top: 140px;
 }
 .main .start h1{
     font-family: 'plasma';
     position: absolute;
-    font-size: 6em;
+    font-size: 6.5em;
     right: 21%;
-    top: 35%;
+    top: 40%;
 }
 .main .start p{
     font-family: 'MahboubehMehravar', sans-serif;
@@ -102,22 +108,25 @@ body{
     font-size: 1.1em;
     bottom: 10px;
     color: #807267;
-    top: -40px;
+    top: -110px;
 }
 .main .description{
-    width: 800px;
+    width: 790px;
     height: 300px;
     background: #D4BDAC;
-    right: 440px;
-    border-radius: 11px;
+    right: 21%;
+    top: -770px;
+    border-radius: 10px;
     position: relative;
     margin: 200px 0px;
+    z-index: 2;
 }
 .main .description p{
     width: 600px;
-    position: absolute;
+    position: relative;
     right: 90px;
     top: 40px;
+    z-index: 2;
 }
 .main .description .quiz-link{
     background: #5272CC;
@@ -137,18 +146,24 @@ body{
     color: black;
     font: 'MahboubehMehravar', sans-serif;
 }
-.main .blob-container .blob{
-    width: 50%;
+.main .bblob-container .blue-blob{
+    width: 60%;
     position: relative;
-    left: 400px;
+    left: 430px;
     opacity: 80%;
+    z-index: 1;
+}
+
+.question{
+    position: relative;
+    margin-top: -810px;
 }
 
 .question h1{
     font-family: plasma, sans-serif;
     font-size: 1.7em;
     position: relative;
-    right: 250px;
+    right: 21%;
     margin-bottom: 25px;
   }
   
@@ -166,20 +181,19 @@ body{
     font-family: 'MahboubehMehravar', sans-serif;
     background: #D4BDAC;
     color: #333333;
-    width:95%;
+    width:85%;
     padding-left:20px;
-    padding-right: 20px;
+    padding-right: 55px;
     margin-top: 20px;
     margin-bottom:20px;
   }
   
   .faq {
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
     border: none;
     border-radius: 14px;
     position: relative;
-    right: 110px;
+    right: 24%;
   }
   
   .faq label {
@@ -248,6 +262,41 @@ body{
     color: black;    
 }
 
+.main .rblob-container .red-blob{
+    width: 60%;
+    position: relative;
+    left: -900px;
+    opacity: 80%;
+    z-index: 1;
+}
 
+.footer{
+    position: relative;
+    z-index: 3;
+    margin-top: -800px;
+}
+.footer .footer-link a{
+    position: relative;
+    right: 21%;
+    top: 74px;
+    color: #000000;
+    text-decoration: none;
+}
+ .footer .image{
+    position: relative; 
+    right: 75%;
+    width: 50px;
+ }
+ .footer .text{
+    position: relative;
+    right: 65%;
+    color: #333333;
+ }
+ .footer .rights{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    color: #807267;
+ }
 
 

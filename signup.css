@@ -13,6 +13,7 @@ body {
     font-family: mahbu ,sans-serif;
     display: flex;
     background-color: #fff5e5;
+    overflow-y: hidden;
 } 
 input::placeholder {
     text-align: right;

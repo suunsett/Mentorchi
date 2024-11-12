@@ -15,6 +15,7 @@
     box-sizing: border-box;
 }
 body{
+    overflow-y: hidden;
     background: #FFF5E5;
     display: flex;
     width: 100%;
@@ -117,7 +118,7 @@ body{
     font-size: .8em;
     padding: 10px;
 }
-.login-box .password-box{
+.password-box{
     background: none;
     border: 2px solid #5272CC;
     opacity: 90%;
@@ -168,6 +169,7 @@ body{
     text-decoration: none;
     color: #0A0090;
     font-size: .8em;
+    z-index: 1;
 }
 .login-box .image-container img{
     width: 600px;

@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'login.html';
         });
     }
-
     const loginButtonInLoginPage = document.querySelector('#login_button');
     if (loginButtonInLoginPage) {
         loginButtonInLoginPage.addEventListener('click', async (event) => {

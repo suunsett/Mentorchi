@@ -25,7 +25,7 @@ body{
     justify-content: center;
 }
 .container .header{
-    background: #c8ae9c;
+    background: #D4BDAC;
     width: 1000px;
     height: 80px;
     position: fixed;
@@ -33,15 +33,15 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 0px 315px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .container .nav-bar .nav-btn{
     background: none;
     margin-top: 20px;
     margin-right: 20px;
 }
-.container .nav-bar .nav-btn .btn-login{/*link or button?*/
+.container .nav-bar .nav-btn .btn-login{
     font-family: 'MahboubehMehravar', sans-serif;
     background: #806b5e;
     border-radius: 10px;
@@ -52,7 +52,7 @@ body{
     margin: 0px 5px;
     cursor: pointer;
 }
-.container .nav-bar .nav-btn .btn-signup{/*link or button?*/
+.container .nav-bar .nav-btn .btn-signup{
     font-family: 'MahboubehMehravar', sans-serif;
     border: 1px solid #4a362a;
     font-size: 1.2em;

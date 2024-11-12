@@ -18,8 +18,8 @@ body {
 input::placeholder {
     text-align: right;
     font-size: 0.8em;
-    padding: 10px;
     font-family: mahbu ,sans-serif;
+    padding: 10px 0px;
 }
 
 .signup-container {
@@ -62,6 +62,7 @@ h2 {
     border-radius: 20px;
     margin-bottom: 20px;
     outline: none;
+    padding: 0px 10px;
 }
 
 .confirm-button {

@@ -92,15 +92,13 @@ h2 {
     color: #0a0090;
     text-decoration: none;
 }   
-
+.container{
+    z-index: 1;
+}
 .image-container img{
     width: 700px;
     height: 400px;
     position: relative;
     left: 280px;
     bottom: 250px;
-}
-
-::-webkit-scrollbar{
-    display: none;
 }

@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'login.html';
         });
     }
+    const quizButton = document.querySelector('#quiz_button');
+    if(quizButton){
+        quizButton.addEventListener('click', () => {
+            window.location.href = 'quiz.html';
+        });
+    }
     const loginButtonInLoginPage = document.querySelector('#login_button');
     if (loginButtonInLoginPage) {
         loginButtonInLoginPage.addEventListener('click', async (event) => {

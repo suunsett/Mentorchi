@@ -17,6 +17,7 @@ body{
     background: #FFF5E5;
     font-family: 'MahboubehMehravar', sans-serif;
     overflow-x: hidden; 
+    width: 1536px;
     /* max-height: 100vh; */
     
 }
@@ -76,13 +77,13 @@ body{
     font-size: 1.2em;
     color: black;
     font-weight: bold;
-    padding: 42px;
+    padding: 65px;
     margin: 1px;
 }
 .container .header .image{/*it should be link to home page*/
     top: 18px;
     position: fixed;
-    left: 310px;
+    left: 380px;
     width: 50px;
 }
 
@@ -113,10 +114,10 @@ body{
     top: -90px;
 }
 .main .description{
-    width: 790px;
+    width: 800px;
     height: 300px;
     background: #D4BDAC;
-    right: 21%;
+    right: 24%;
     top: -770px;
     border-radius: 10px;
     position: relative;

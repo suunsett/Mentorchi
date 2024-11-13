@@ -12,10 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'login.html';
         });
     }
-    const quizButton = document.querySelector('#quiz_button');
-    if(quizButton){
+    const buttons = document.querySelectorAll('.btn');//disable all buttns except quiz button 
+    const quizButton = document.getElementById('quiz_button');
+
+    buttons.forEach(button => {
+        if (button != quizButton)
+            button.disabled = true; 
+    })
+    if (quizButton) {
         quizButton.addEventListener('click', () => {
-            window.location.href = 'quiz.html';
+            window.location.href = 'quiz.html'; // Navigate to the quiz page
         });
     }
     const loginButtonInLoginPage = document.querySelector('#login_button');

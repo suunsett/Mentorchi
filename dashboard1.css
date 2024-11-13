@@ -13,7 +13,6 @@ body{
     background: #FFF5E5;
     overflow-x: hidden;
     background-blend-mode: overlay;
-    /* filter: blur(4px);  */
 }
 .main-container{
     filter: blur(4px);

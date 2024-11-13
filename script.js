@@ -14,8 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     const buttons = document.querySelectorAll('.nav .buttons .btn');//disable all buttns except quiz button 
     const quizButton = document.getElementById('quiz_button');
-    const container = document.getElementById('content-container');
-
     buttons.forEach(button => {
         if (button != quizButton)
             button.disabled = true; 
@@ -25,21 +23,26 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'quiz.html'; // Navigate to the quiz page
         });
     }
-    // buttons.forEach(button => {
-    //     button.addEventListener("click", () => {
-    //       buttons.forEach(btn => btn.style.borderBottom = "none");
+    const button2 = document.querySelectorAll('.nav .buttons .btn1');
+    const container = document.querySelector(".main .container2");
+
+  button2.forEach(button => {
+    button.addEventListener("click", () => {
+        
+      button2.forEach(btn => btn.style.borderBottom = "none");
     
-    //       button.style.borderBottom = "3px solid #D4BDAC"; 
+      button.style.borderBottom = "3px solid black"; 
     
-    //       if (button.id === "dashboard-btn") {
-    //         container.innerHTML = "<h2>Dashboard Content</h2>"; 
-    //       } else if (button.id === "profile-btn") {
-    //         container.innerHTML = "<h2>Profile Page Content</h2>"; 
-    //       } else if (button.id === "settings-btn") {
-    //         container.innerHTML = "<h2>Settings Page Content</h2>";
-    //       }
-    //     });
-    //   });
+      if (button.id === "dashboard-btn") {
+        container.innerHTML = "<h2>Dashboard Content</h2>";
+      } else if (button.id === "profile-btn") {
+        container.innerHTML = "<h2>Profile Page Content</h2>";
+      } else if (button.id === "settings-btn") {
+        container.innerHTML = "<h2>Settings Page Content</h2>"; 
+      }
+    });
+  });
+
 
     const loginButtonInLoginPage = document.querySelector('#login_button');
     if (loginButtonInLoginPage) {

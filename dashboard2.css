@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'MahboubehMehravar';
+    src: url(Mentorchii/Mahboubeh_mehravar.ttf);
+}
+*{
+    font-family: 'MahboubehMehravar', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+    font-size: 16px;
+}
+body{
+    background: #FFF5E5;
+    overflow-x: hidden;
+    background-blend-mode: overlay;
+}
+.main-container{
+    filter: blur(4px);
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container .header{
+    background: #D4BDAC;
+    width: 860px;
+    height: 80px;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 315px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.container .nav-bar .nav-link{
+    top: 23px;
+    position: fixed;
+    right: 400px;
+}
+.container .nav-bar .nav-link a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    padding: 0px 70px;
+    margin: 1px;
+}
+.container .header .image{/*it should be link to home page*/
+    top: 20px;
+    position: fixed;
+    left: 350px;
+    width: 50px;
+}
+.nav{
+    width: 730px;
+    height: 50px;
+    background: #D4BDAC;
+    position: relative;
+    top: 130px;
+    border-radius: 15px;
+    right: 390px;
+    display: flex;
+    align-items: center;
+}
+.nav i{
+    font-size: 1.3em;
+    position: relative;
+    top: 8px;
+}
+.nav .buttons{
+    position: relative;
+    right: 8px
+}
+.nav .buttons .btn{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.main .container2{
+    width: 630px;
+    height: 415px;
+    border: 3px solid #D4BDAC;
+    border-radius: 12px;
+    margin-top: 180px;
+}

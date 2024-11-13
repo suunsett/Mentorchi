@@ -12,8 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'login.html';
         });
     }
-    const buttons = document.querySelectorAll('.btn');//disable all buttns except quiz button 
+    const buttons = document.querySelectorAll('.nav .buttons .btn');//disable all buttns except quiz button 
     const quizButton = document.getElementById('quiz_button');
+    const container = document.getElementById('content-container');
 
     buttons.forEach(button => {
         if (button != quizButton)
@@ -24,6 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'quiz.html'; // Navigate to the quiz page
         });
     }
+    // buttons.forEach(button => {
+    //     button.addEventListener("click", () => {
+    //       buttons.forEach(btn => btn.style.borderBottom = "none");
+    
+    //       button.style.borderBottom = "3px solid #D4BDAC"; 
+    
+    //       if (button.id === "dashboard-btn") {
+    //         container.innerHTML = "<h2>Dashboard Content</h2>"; 
+    //       } else if (button.id === "profile-btn") {
+    //         container.innerHTML = "<h2>Profile Page Content</h2>"; 
+    //       } else if (button.id === "settings-btn") {
+    //         container.innerHTML = "<h2>Settings Page Content</h2>";
+    //       }
+    //     });
+    //   });
+
     const loginButtonInLoginPage = document.querySelector('#login_button');
     if (loginButtonInLoginPage) {
         loginButtonInLoginPage.addEventListener('click', async (event) => {

@@ -23,27 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'quiz.html'; // Navigate to the quiz page
         });
     }
-    const button2 = document.querySelectorAll('.nav .buttons .btn1');
-    const container = document.querySelector(".main .container2");
-
-  button2.forEach(button => {
-    button.addEventListener("click", () => {
-        
-      button2.forEach(btn => btn.style.borderBottom = "none");
+    let { setSection } = (() => {
+        let selectedSection = 'roadmap';
     
-      button.style.borderBottom = "3px solid black"; 
+        function setSection(section) {
+            selectedSection = section;
+            onSectionChanged();
+        }
     
-      if (button.id === "dashboard-btn") {
-        container.innerHTML = "<h2>Dashboard Content</h2>";
-      } else if (button.id === "profile-btn") {
-        container.innerHTML = "<h2>Profile Page Content</h2>";
-      } else if (button.id === "settings-btn") {
-        container.innerHTML = "<h2>Settings Page Content</h2>"; 
-      }
-    });
-  });
-
-
+        function onSectionChanged() {
+            document.querySelectorAll('.container2 > div').forEach(div => {
+                div.classList.add('hide');
+                div.classList.remove('show');
+            });
+    
+            const selectedElement = document.querySelector(`#${selectedSection}`);
+            selectedElement.classList.add('show');
+            selectedElement.classList.remove('hide');
+        }
+    
+        // Initialize with default section
+        onSectionChanged();
+    
+        return { setSection};
+    })();
+    
+    // Expose setSection to the global scope
+    window.setSection = setSection;
+    
     const loginButtonInLoginPage = document.querySelector('#login_button');
     if (loginButtonInLoginPage) {
         loginButtonInLoginPage.addEventListener('click', async (event) => {
@@ -121,3 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 }
 });
+
+
+

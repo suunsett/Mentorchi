@@ -20,14 +20,43 @@
     </div>
     <div class="nav">
         <form action="" class="buttons">
-            <button class="btn1" id = "profile-btn"><i class='bx bxs-user-circle'></i></button>
-            <button class="btn1" id = "quiz-btn">کوئیز</button>
-            <button class="btn1">منتور</button>
-            <button class="btn1">نمودار پیشرفت</button>
+            <button class="btn1" type="button" onclick="setSection('profile')"><i class='bx bxs-user-circle'></i></button>
+            <button class="btn1" type="button" onclick="setSection('roadmap')">نقشه راه</button>
+            <button class="btn1" type="button" onclick="setSection('mentor')">منتور</button>
+            <button class="btn1" type="button" onclick="setSection('progress')">نمودار پیشرفت</button>
+        </div>
         </form>
-    </div>
     <main class="main">
-        <div class="container2" id="content-container"></div>
+        <div class="container2" id="content-container">
+            <div class="profile-page hide" id="profile">
+                <div class="email"><! -- i should add email address of my user using js--!> 
+                    <p>ایمیل:</p>
+
+                </div>
+                <div class="change-password">
+                    <p>تعویض رمز عبور:</p>
+                    <form action="" class="inputs">
+                        <input type="text" class="input" placeholder="رمز عبور قبلی">
+                        <input type="text" class="input" placeholder="رمز عبور جدید">
+                        <input type="text" class="input" placeholder="تکرار رمز عبورجدید">
+                        <button class="btn">تایید</button>
+                    </form>
+                </div>
+                <div class="exit-account">
+                    <p>خروج از حساب کاربری:</p>
+                    <button class="exit-btn" id="exit_from_account">خروج</button>
+                </div>
+            </div>
+            <div class="roadmap-page show" id="roadmap">
+                <h1>roadmap page</h1>
+            </div>
+            <div class="mentor-page hide" id="mentor">
+                <h1>mentor page</h1>
+            </div>
+            <div class="progress-page hide" id="progress">
+                <h1>progress page</h1>
+            </div>
+        </div>        
     </main>
     <script src="script.js"></script>
 </body>

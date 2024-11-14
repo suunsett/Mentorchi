@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'MahboubehMehravar';
+    src: url(Mentorchii/Mahboubeh_mehravar.ttf);
+}
+@font-face {
+    font-family: 'plasma';
+    src: url(Mentorchii/Plasma-Square-Dots-@behfont.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+    font-size: 16px;
+}
+body{
+    background: #FFF5E5;
+    font-family: 'MahboubehMehravar', sans-serif;
+    height: 250vh;
+    overflow-x: hidden; 
+    }
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container .header{
+    background: #D4BDAC;
+    width: 1000px;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 315px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 4;
+}
+.container .nav-bar .nav-link{
+    top: 23px;
+    position: fixed;
+    right: 450px;
+}
+.container .nav-bar .nav-link a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    padding: 50px;
+    margin: 1px;
+}
+.container .header .image{
+    top: 18px;
+    position: fixed;
+    left: 300px;
+    width: 50px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.main .text{
+    width: 800px;
+}
+.main .text p{
+    font-size: 18px;
+    width: 700px;
+    position: relative;
+    right: 7%;
+    top: 150px;
+}
+.title{
+    font-family: 'plasma',sans-serif;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.questions {
+    width: 600px;
+    height: 190px;
+    background-color: #D4BDAC; 
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 50px;
+    right: 11%;
+    top: 250px;
+}
+.questions .answer{
+    display: flex;
+    flex-direction: column;   
+}
+.option {
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    margin-top : 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.option input[type="checkbox"] {
+    display: none;
+}
+
+/* Custom style for selected option */
+.option input[type="checkbox"]:checked + span {
+    color: #000000;
+    background-color: #68993d;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.option span {
+    margin-left: 10px;
+    color: #333;
+}
+
+.confirm-btn button{
+    font-family: 'MahboubehMehravar', sans-serif;
+    background: #5272CC;
+    width: 240px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 33%;
+    top: 300px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer{
+    position: relative;
+    top: 300px;
+
+}
+.footer .footer-link a{
+    position: relative;
+    right: 21%;
+    top: 74px;
+    color: #000000;
+    text-decoration: none;
+}
+ .footer .image{
+    position: relative; 
+    right: 75%;
+    z-index: 3;
+    width: 50px;
+ }
+ .footer .text{
+    position: relative;
+    right: 65%;
+    z-index: 3;
+    color: #333333;
+ }
+ .footer .rights{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    color: #807267;
+ }

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'signup.html';
         });
     }
-
+    //IIFE (Immediately Invoked Function Expression)
     const loginButton = document.querySelector('.btn-login');
     if (loginButton) {
         loginButton.addEventListener('click', () => {
@@ -23,7 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'quiz.html'; // Navigate to the quiz page
         });
     }
-    let { setSection } = (() => {
+
+
+    let { setSection } = (() => { // switch dashbords pages
         let selectedSection = 'roadmap';
     
         function setSection(section) {
@@ -50,7 +52,28 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Expose setSection to the global scope
     window.setSection = setSection;
-    
+    //exit from account 
+    document.querySelector('#exit_from_account').addEventListener('click', () => {
+        const container = document.querySelector('#dashbord-container');
+        const exitContainer = document.querySelector('#exit_container');
+        const profileContainer = document.querySelector('#profile');
+     
+        exitContainer.style.display = 'block';
+        container.style.filter = 'blur(4px)';
+      
+        const button1 = document.querySelector('#back');
+        button1.addEventListener('click', () => {
+            
+            profileContainer.style.display = 'block';
+            exitContainer.style.display = 'none';
+            container.style.filter = 'none';
+        });
+        const button2 = document.querySelector('#exit');
+        button2.addEventListener('click', () => {
+            window.location.href = 'homepage.html';
+        });
+    }); 
+    //login
     const loginButtonInLoginPage = document.querySelector('#login_button');
     if (loginButtonInLoginPage) {
         loginButtonInLoginPage.addEventListener('click', async (event) => {
@@ -85,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
+    //sign up
     const signupButtonInSignupPage = document.querySelector('#signup_button');
     if (signupButtonInSignupPage) {
     signupButtonInSignupPage.addEventListener('click', async (event) => {

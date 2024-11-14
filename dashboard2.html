@@ -6,58 +6,67 @@
     <link rel="stylesheet" href="dashboard2.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="nav-bar">
-                <div class="nav-link">
-                    <a href="">توضیحات</a>
-                    <a href="">سوالات متداول</a>
-                    <a href="">درباره ما</a>
+    <div id="dashbord-container">
+        <div class="container" id="header-container">
+            <header class="header">                
+                <div class="nav-bar">
+                    <div class="nav-link">
+                        <a href="">توضیحات</a>
+                        <a href="">سوالات متداول</a>                        
+                        <a href="">درباره ما</a>
+                    </div>
+                    <a href="homepage.html"><img src="mentorChi-logo.png" alt="" class="image"></a>
                 </div>
-                <a href="homepage.html"><img src="mentorChi-logo.png" alt="" class="image"></a>
-            </div>
-        </header>
-    </div>
-    <div class="nav">
-        <form action="" class="buttons">
-            <button class="btn1" type="button" onclick="setSection('profile')"><i class='bx bxs-user-circle'></i></button>
-            <button class="btn1" type="button" onclick="setSection('roadmap')">نقشه راه</button>
-            <button class="btn1" type="button" onclick="setSection('mentor')">منتور</button>
-            <button class="btn1" type="button" onclick="setSection('progress')">نمودار پیشرفت</button>
+            </header>
         </div>
+        
+        <div class="nav" id="navbar">
+            <form action="" class="buttons">                
+                <button class="btn1" type="button" onclick="setSection('profile')"><i class='bx bxs-user-circle'></i></button>
+                <button class="btn1" type="button" onclick="setSection('roadmap')">نقشه راه</button>
+                <button class="btn1" type="button" onclick="setSection('mentor')">منتور</button>
+                <button class="btn1" type="button" onclick="setSection('progress')">نمودار پیشرفت</button>           
+            </form>
+         </div>
+        <main class="main">
+              <div class="container2" id="content-container">                
+                <div class="profile-page hide" id="profile">
+                    <div class="email"><! -- i should add email address of my user using js--!> 
+                        <p>ایمیل:</p>
+                    </div>
+                    <div class="change-password">
+                        <p>تعویض رمز عبور:</p>
+                        <form action="" class="inputs">
+                            <input type="text" class="input" placeholder="رمز عبور قبلی">                            
+                            <input type="text" class="input" placeholder="رمز عبور جدید">
+                            <input type="text" class="input" placeholder="تکرار رمز عبورجدید">
+                            <button class="btn">تایید</button>
+                        </form>
+                    </div>
+                    <div class="exit-account">
+                        <p>خروج از حساب کاربری:</p>
+                       <button class="exit-btn" id="exit_from_account">خروج</button>
+                    </div>
+                </div>
+                <div class="roadmap-page show" id="roadmap">                    
+                    <h1>roadmap page</h1>
+                </div>
+                <div class="mentor-page hide" id="mentor">
+                    <h1>mentor page</h1>
+                </div>                
+                <div class="progress-page hide" id="progress">
+                    <h1>progress page</h1>
+                </div>
+            </div>                    
+        </main>
+    </div>  
+    <div class="exit-account-container hiden" id="exit_container">
+        <p> میخواهید از حساب کاربری خود خارج شوید؟</p>
+        <form action="" class="buttons">                
+            <button type="button" class="back-btn" id="back">انصراف</button>
+            <button type="button" class="exit-btn" id="exit">خروج</button>
         </form>
-    <main class="main">
-        <div class="container2" id="content-container">
-            <div class="profile-page hide" id="profile">
-                <div class="email"><! -- i should add email address of my user using js--!> 
-                    <p>ایمیل:</p>
-
-                </div>
-                <div class="change-password">
-                    <p>تعویض رمز عبور:</p>
-                    <form action="" class="inputs">
-                        <input type="text" class="input" placeholder="رمز عبور قبلی">
-                        <input type="text" class="input" placeholder="رمز عبور جدید">
-                        <input type="text" class="input" placeholder="تکرار رمز عبورجدید">
-                        <button class="btn">تایید</button>
-                    </form>
-                </div>
-                <div class="exit-account">
-                    <p>خروج از حساب کاربری:</p>
-                    <button class="exit-btn" id="exit_from_account">خروج</button>
-                </div>
-            </div>
-            <div class="roadmap-page show" id="roadmap">
-                <h1>roadmap page</h1>
-            </div>
-            <div class="mentor-page hide" id="mentor">
-                <h1>mentor page</h1>
-            </div>
-            <div class="progress-page hide" id="progress">
-                <h1>progress page</h1>
-            </div>
-        </div>        
-    </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

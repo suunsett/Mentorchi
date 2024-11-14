@@ -13,6 +13,13 @@ body{
     background: #FFF5E5;
     overflow-x: hidden;
     background-blend-mode: overlay;
+    overflow-y: hidden;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .main-container{
     filter: blur(4px);
@@ -80,11 +87,6 @@ body{
     padding: 0px 20px;
     font-size: 1.3em;
     cursor: pointer;
-}
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;   
 }
 .main .container2{
     width: 630px;
@@ -162,4 +164,52 @@ body{
 }
 .hide{
     display: none;
+}
+.exit-account-container{
+    width: 320px;
+    height: 155px;
+    background: #D4BDAC;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 320px;
+    display: none;
+    position: relative;
+    bottom: 370px;
+    right: 620px;
+}
+.exit-account-container p{
+    margin-right: 30px;
+    font-size: 1.25em;
+    position: relative;
+    top: 25px;
+}
+.exit-account-container .buttons{
+    margin-top: 15px;
+    margin-right: 20px;
+    position: relative;
+    top: 20px;
+}
+.exit-account-container .buttons .back-btn{
+    cursor: pointer;
+    background: #99887C;
+    width: 100px; 
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin: 20px;
+}
+.exit-account-container .buttons .exit-btn{
+    cursor: pointer;
+    background: none;
+    width: 100px; 
+    height: 30px;
+    border: 2px solid #99887C;
+    outline: none;
+    border-radius: 8px;
+    margin: 20px;
 }

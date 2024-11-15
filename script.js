@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const signupButtonInSignupPage = document.querySelector('#signup_button');
     if (signupButtonInSignupPage) {
     signupButtonInSignupPage.addEventListener('click', async (event) => {
+        
         event.preventDefault();
         
         const email = document.querySelector('#email_signup').value;
@@ -139,7 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (response.ok) {
                 console.log("Signup successful:", data);
                 alert("Account created successfully!");
-                window.location.href = 'login.html';
+                // window.location.href = 'login.html';
+                window.location.href = 'dashboard1.html';//error
             } else {
                 console.error("Signup error:", data);
                 alert(data.message || "An error occurred during signup.");

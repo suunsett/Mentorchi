@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     
             const selectedElement = document.querySelector(`#${selectedSection}`);
-            selectedElement.classList.add('show');
-            selectedElement.classList.remove('hide');
+            selectedElement?.classList.add('show');
+            selectedElement?.classList.remove('hide');
         }
     
         // Initialize with default section
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Expose setSection to the global scope
     window.setSection = setSection;
     //exit from account 
-    document.querySelector('#exit_from_account').addEventListener('click', () => {
+    document.querySelector('#exit_from_account')?.addEventListener('click', () => {
         const container = document.querySelector('#dashbord-container');
         const exitContainer = document.querySelector('#exit_container');
         const profileContainer = document.querySelector('#profile');
@@ -109,8 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     //sign up
+    console.log("dfgsfg");
+
     const signupButtonInSignupPage = document.querySelector('#signup_button');
-    if (signupButtonInSignupPage) {
+    console.log(signupButtonInSignupPage);
     signupButtonInSignupPage.addEventListener('click', async (event) => {
         
         event.preventDefault();
@@ -138,8 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
 
             if (response.ok) {
-                console.log("Signup successful:", data);
-                alert("Account created successfully!");
+                // console.log("Signup successful:", data);
+                // alert("Account created successfully!");
                 // window.location.href = 'login.html';
                 window.location.href = 'dashboard1.html';//error
             } else {
@@ -151,6 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Failed to connect to the server.");
         }
     });
+    if (true) {
+
 }
 });
 

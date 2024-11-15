@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'MahboubehMehravar';
+    src: url(Mentorchii/Mahboubeh_mehravar.ttf);
+}
+@font-face {
+    font-family: 'plasma';
+    src: url(Mentorchii/Plasma-Square-Dots-@behfont.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #FFF5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    font-size: 16px;
+}
